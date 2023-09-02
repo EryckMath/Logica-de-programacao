@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+
+<body>
+    <script>
+        //Construa um algoritmo que leia uma quantidade indeterminada de números inteiros positivos e identifique qual foi o menor número digitado. O final da série de números digitada deve ser indicado pela entrada de -1. Dica: Quando declarar a variável que vai armazenar o menor valor, ela precisa ser inicializada com um valor alto, tipo 99999.
+        var num = 1;
+        var menor = 9999;
+        for (var i = 0; num > -1;) {
+            num = prompt("Informe um valor: (-1 encerrará o código)");
+            if ((num <= menor) && (num != -1)) {
+                menor = num
+            }
+        }
+        document.write(`O menor número ${menor}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 14</title>
+</head>
+<body>
+    <script>
+        var Número = 1;
+        var Soma = 0;
+        var Quantidade = 0;
+        var Produto = 1;
+        var Maior = 0;
+        var Menor = 99999;
+
+        var Número = parseFloat;
+
+        while (Número != 0) {
+            Número = Number(prompt("Informe um número:"));
+
+
+            if (Número != 0) {
+                Soma += Número;
+                Quantidade++;
+                Produto = Produto * Número;
+                if (Número > Maior) {
+                    Maior = Número;
+                }
+                if (Número < Menor) {
+                    Menor = Número;
+                }
+            }
+
+        }
+
+        document.write("Foram digitados " + Quantidade + " números e o resultado foi: <br>");
+        document.write("Soma: " + Soma);
+        document.write("<br>");
+        document.write("Média: " + (Soma / Quantidade));
+        document.write("<br>");
+        document.write("Produto: " + Produto);
+        document.write("<br>");
+        document.write("Menor: " + Menor);
+        document.write("<br>");
+        document.write("Maior: " + Maior);
+    </script>
+</body>
+</html>

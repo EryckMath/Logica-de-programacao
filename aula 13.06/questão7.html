@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+
+<body>
+    <script>
+        var num = 0;
+        var menor = 9999;
+        while (num != -1) {
+            num = Number.parseInt(prompt("Informe um número. (o valor -1 encerrará o processo)"));
+            if ((num < menor) && (num != -1)) {
+                menor = num
+            }
+        }
+        document.write("O menor número é:<br>" + menor);
+    </script>
+</body>
+
+</html>

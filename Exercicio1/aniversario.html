@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Ano de nascimento
+        var nascimento = Number(prompt("Informe o ano do seu nascimento:"));
+        var anoAtual = Number(prompt("Informe o ano atual:"));
+        //Calculo da idade
+        var idade = anoAtual - nascimento;
+        //Calculo idade em 2028
+        var novaIdade = 2028 - nascimento;
+        //Imprimir o resultado
+        document.write(`A sua idade atual é ${idade}, em 2028 sua idade será ${novaIdade}.`); 
+    </script>
+</body>
+
+</html>

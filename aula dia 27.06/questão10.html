@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <script>
+        //Faça um algoritmo que leia vários números e informe quantos desses números entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido o algoritmo deverá cessar sua execução e informar o resultado.
+        var num = 1;
+        for(var cont = 0; num != 0;){
+            num = Number(prompt("Informe um número"));
+            if((num >= 100) && (num <= 200)){
+                cont++
+            }
+        }
+        document.write(`A quantidade dos valores digitados entre 100 e 200 foram ${cont}.`)
+    </script>
+</body>
+</html>

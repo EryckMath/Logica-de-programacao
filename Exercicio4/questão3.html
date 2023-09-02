@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+
+<body>
+    <script>
+        //Informe código e salário
+        var código = prompt("Informe qual é o seu código: 101 - 102 - 103");
+        var salario = Number(prompt("Informe o seu salário"));
+        //Aumento
+        if (código == "101") {
+            document.write(`Seu salário com aumento será ${salario + salario * 0.1}`)
+        } else {
+            if (código == "102") {
+                document.write(`Seu salário com aumento será ${salario + salario * 0.2}`)
+            }
+            else {
+                if (código == "103") {
+                    document.write(`Seu salário com aumento será ${salario + salario * 0.3}`)
+                }
+                else {
+                    document.write(`Seu salário com aumento será ${salario + salario * 0.5}`)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

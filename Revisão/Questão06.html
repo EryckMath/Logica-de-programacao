@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+    <script>
+        //Informar os números
+        var num1 = Number(prompt("Informe um número"));
+        var num2 = Number(prompt("Informe um número"));
+        var num3 = Number(prompt("Informe um número"));
+        var aux = num1;
+        //Resultado
+        if(num3 > num1){
+            aux = num3
+            num3 = num2
+            num2 = aux
+        }
+        if(num2 > num1){
+            aux = num2
+            num2 = num1
+            num1 = aux
+        }
+        if(num3 > num2){
+            aux = num3
+            num3 = num2
+            num2 = aux
+        }
+        document.write(`${num1} ${num2} ${num3}`);
+    </script>
+</body>
+</html>

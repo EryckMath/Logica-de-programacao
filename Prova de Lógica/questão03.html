@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var menorNum = Number(prompt("Informe um valor"));
+        var maiorNum = Number(prompt("Informe um valor maior que o primeiro digitado"));
+        var i = menorNum
+        document.write(`Esses são os números pares entre ${menorNum} e ${maiorNum}: <br>`)
+        while (maiorNum >= i) {
+            if (i % 2 == 0) {
+                document.write(`${i} <br>`)
+            }
+            i++
+        }
+    </script>
+</body>
+
+</html>

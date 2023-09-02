@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n1 = Number(prompt("Informe um número"));
+        var n2 = Number(prompt("Informe um número"));
+        var n3 = Number(prompt("Informe um número"));
+        var aux = n1
+        if (n3 > n2) {
+            aux = n3
+            n3 = n2
+            n2 = aux
+        }
+        if (n2 > n1) {
+            aux = n2
+            n2 = n1
+            n1 = aux
+        }
+        if (n3 > n2) {
+            aux = n3
+            n3 = n2
+            n2 = aux
+        }
+        document.write(`${n1} ${n2} ${n3}`)
+
+    </script>
+</body>
+
+</html>

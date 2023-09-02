@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+
+<body>
+    <script>
+        //Construir um algoritmo que receba vários valores informados pelo usuário e informe qual foi o maior valor digitado. Quando o valor -1 for lido o algoritmo deverá cessar sua execução e informar o resultado.
+        var num = 0
+        for (var maior = 0; num > -1;) {
+            num = Number.parseInt(prompt("Informe um número. (o valor -1 encerrará o processo)"));
+            if (num > maior) {
+                maior = num
+            }
+        }
+        document.write(`O maior número é ${maior}`)
+    </script>
+</body>
+
+</html>

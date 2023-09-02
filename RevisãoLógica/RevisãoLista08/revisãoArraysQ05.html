@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+
+<body>
+    <script>
+        var num = Number(prompt("Informe um número:"));
+        var vetor = [];
+        while(num != 0){
+            vetor.push(num);
+            num = Number(prompt(" Informe um outro número: [0 encerrará o processo]"));
+        }
+        document.write(`Os números digitados foram ${vetor} e a quantidade de números digitados foram ${vetor.length}`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Nome e sobrenome</title>
+</head>
+<body>
+    <script>
+        //Instanciar as variaveis varNome e varSobrenome
+        var varNome, varSobrenome;
+        //Inicializar as variaveis com valores vindos do usuario
+        varNome = prompt("Informe seu nome:");
+        varSobrenome = prompt("Agora informe o sobrenome")
+        //Imprimir uma mensagem de boas vindas concatenando as variaveis;
+        document.write("Bem vindo, " + varNome + " " + varSobrenome + "! <br>");
+        document.write(`Bem vindo, ${varNome} ${varSobrenome}!`)
+    </script>    
+</body>
+</html>

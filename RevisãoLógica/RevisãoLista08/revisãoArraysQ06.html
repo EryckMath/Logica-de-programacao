@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+
+<body>
+    <script>
+        var num = Number(prompt("Informe um número:"));
+        var vetor = [];
+        var soma = 0;
+        while(num != 0){
+            vetor.push(num);
+            soma = soma + num;
+            num = Number(prompt("Informe outro número: [0 encerrará o processo]"))
+        }
+        document.write(`O valores digitados foram ${vetor} e a soma deles é igual a ${soma}.`)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 14</title>
+</head>
+
+<body>
+    <script>
+        //Escreva um algoritmo que receba vários números como entrada do teclado e escreva na tela a soma, a quantidade de números digitados, a média, a soma, o produto, o menor valor e o maior valor, usando uma linha para cada resultado.
+        var num = 1;
+        var soma = 0;
+        var quant = 0;
+        var produto = 1;
+        var maior = 0;
+        var menor = 99999;
+        var num = parseFloat;
+        for (var cont = 0; num != 0; cont++) {
+            num = Number(prompt("Informe um valor: (0 encerrará o processo)"));
+            if (num != 0) {
+                soma += num;
+                quant++;
+                produto = produto * num;
+                if (num > maior) {
+                    maior = num;
+                }
+                if (num < menor) {
+                    menor = num;
+                }
+            }
+        }
+        document.write(`Foram digitados ${quant} e o resultado foi: <br>
+        A soma foi: ${soma} <br>
+        A média foi: ${(soma / quant).toFixed(2)} <br>
+        O produto foi: ${produto} <br>
+        O menor valor foi: ${menor} <br>
+        O maior valor foi: ${maior} <br>`);
+    </script>
+</body>
+
+</html>

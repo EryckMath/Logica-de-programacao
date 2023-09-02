@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+
+<body>
+    <script>
+        //Informe ano e valor
+        var ano = Number(prompt("Informe o ano do carro"));
+        var valor = Number(prompt("Informe o valor do carro"));
+        //Calculo imposto
+        var imposto = (valor * 0.01).toFixed(2);
+        var impostoDois = (valor * 0.015).toFixed(2);
+        //Resultado
+        if (ano < 1990) {
+            window.alert(`O imposto a ser pago será no valor de R$${imposto}`)
+        }
+        else {
+            window.alert(`O imposto a ser pago será no valor de R$${impostoDois}`)
+        }
+    </script>
+</body>
+
+</html>

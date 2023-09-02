@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = produto = 1;
+        var soma = qtde = maior = 0;
+        var menor = 99999;
+        var num = parseFloat;
+        while (num != 0) {
+            num = Number(prompt("Informe um número: [0 encerrará o processo]"));
+            if (num != 0) {
+                soma += num;
+                qtde++;
+                produto = produto * num;
+                if (num > maior) {
+                    maior = num;
+                }
+                if (num < menor) {
+                    menor = num;
+                }
+            }
+        }
+        document.write(`Foram digitados ${qtde} números e o resultado foi: <br>`);
+        document.write(`Soma: ${soma} <br>`);
+        document.write(`Média: ${(soma / qtde)} <br>`);
+        document.write(`Produto: ${produto} <br>`);
+        document.write(`Menor: ${menor} <br>`);
+        document.write(`Maior: ${maior} <br>`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valor Parcelado</title>
+</head>
+
+<body>
+    <script>
+        //Declarar valor do produto
+        var num1 = Number(prompt("Informe o valor do produto:"));
+        var num2 = Number(prompt("Informe o valor das prestações:"));
+        //Calcular a operação
+        var divisao = (num1 / num2).toFixed(2);
+        //Imprimir o resultado
+        document.write(`O valor do produto é ${num1} reais, dividido em ${num2} vezes sem juros cada parcela ficou ${divisao} reais.`);
+    </script>
+</body>
+
+</html>

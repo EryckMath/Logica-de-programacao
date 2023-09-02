@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questão 1</title>
+</head>
+
+<body>
+    <script>
+        //Altura do degrau
+        var alturaDegrau = Number(prompt("Informe a altura do degrau."));
+        var alturaDesejada = Number(prompt("Informe a altura que deseja alcançar em metros."));
+        //Calculo
+        var quantideDegrau = Math.round((alturaDesejada / alturaDegrau)) * 100;
+        //Resultado
+        document.write(`O usúario devera subir ${quantideDegrau} degraus para atingir ${alturaDesejada} metros.`);
+    </script>
+</body>
+
+</html>

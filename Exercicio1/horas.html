@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+</head>
+<body>
+    <script>
+        //Segundos
+        var segundos = Number(prompt("Informe o número de segundos:"));
+        //Calculo de tempo
+        var Minuto = (segundos/60).toFixed(2);
+        var Horas = (Minuto/60).toFixed(2);
+        var Dias = (Horas/24).toFixed(2);
+        //Imprimir o resultado
+        document.write(`Os segundos em minutos são ${Minuto}.`);
+        document.write(`Os minutos em horas são ${Horas}.`);
+        document.write(`As horas em dias são ${Dias}.`);
+    </script>
+</body>
+</html>

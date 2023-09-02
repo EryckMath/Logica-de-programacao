@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+
+<body>
+    <script>
+        //Construir um algoritmo que calcule a soma de vários valores positivos, informados pelo usuário. Quando um valor negativo for lido, o algoritmo deverá cessar sua execução e informar o resultado.
+        var num = 1
+        var soma = 0
+        for (var cont = 0; num >= 0;) {
+            num = Number(prompt("Informe um número: (se for negativo o código será encerrado)"));
+            if (num >= 0) {
+                cont++
+                soma = soma + num
+            }
+
+        }
+        document.write("A soma é " + soma);
+    </script>
+</body>
+
+</html>

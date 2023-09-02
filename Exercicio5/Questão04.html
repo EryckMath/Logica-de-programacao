@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 04</title>
+</head>
+
+<body>
+    <script>
+        //Informar código do cargo
+        var codigo = Number(prompt("Informe o código do cargo: 101 - Gerente, 102 - Engenheiro, 103 - Técnico"));
+        var salario = Number(prompt("Informe o seu salário"));
+        var codigo101 = (salario * 0.1) + salario;
+        var codigo102 = (salario * 0.2) + salario;
+        var codigo103 = (salario * 0.3) + salario;
+        //Resultado
+        if (codigo == 101) {
+            document.write(`Seu antigo salário era R$${salario}, seu novo salario é R$${codigo101.toFixed(2)}, e a diferença é R$${(codigo101 - salario).toFixed(2)}.`)
+        }
+        else {
+            if (codigo == 102) {
+                document.write(`Seu antigo salário era R$${salario}, seu novo salario é R$${codigo102.toFixed(2)}, e a diferença é R$${(codigo102 - salario).toFixed(2)}.`)
+            }
+            else {
+                if (codigo == 103) {
+                    document.write(`Seu antigo salário era R$${salario}, seu novo salario é R$${codigo103.toFixed(2)}, e a diferença é R$${(codigo103 - salario).toFixed(2)}.`)
+                }
+                else {
+                    document.write(`Seu antigo salário era R$${salario}, seu novo salario é R$${((salario * 0.5) + salario).toFixed(2)}, e a diferença é R$${(((salario * 0.5) + salario) - salario).toFixed(2)}.`)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+
+<body>
+    <script>
+        //Informar notas
+        var nota1 = Number(prompt("Informe a primeira nota"));
+        var nota2 = Number(prompt("Informe a segunda nota"));
+        var nota3 = Number(prompt("Informe a terceira nota"));
+        var nota4 = Number(prompt("Informe a quarta nota"));
+        //Média
+        var media = (nota1 + nota2 + nota3 + nota4) / 4;
+        //Conceito
+        if (media >= 9) {
+            document.write("Nota final A")
+        }
+        else {
+            if (media >= 7.5) {
+                document.write("Nota final B")
+            }
+            else {
+                if (media >= 6) {
+                    document.write("Nota final C")
+                }
+                else {
+                    if (media >= 4) {
+                        document.write("Nota final D")
+                    }
+                    else {
+                        if (media < 4) {
+                            document.write("Nota final E")
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+
+<body>
+    <script>
+        var numero = prompt("Informe um número: (o valor 0 encerra o processo)");
+        var x = [];
+        var total = 0;
+        while (numero != 0) {
+            x.push(numero);
+            total = total + Number(numero);
+            numero = prompt("Informe um número: (o valor 0 encerra o processo)");
+        }
+        document.write(`A soma é: ${total}`)
+    </script>
+</body>
+
+</html>

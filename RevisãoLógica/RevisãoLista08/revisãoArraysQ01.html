@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+</head>
+
+<body>
+    <script>
+        var num = [3,5,2];
+        num[0] = 11;
+        num[3] = 1;
+        num.push(4);
+        num.sort();
+        document.write(`${num} <br>`);
+        document.write(`O vetor possui ${num.length} elementos. <br>`);
+        document.write(`${num[0]} <br> ${num[1]} <br> ${num[2]} <br> ${num[3]} <br> ${num[4]} <br>`);
+        for(var pos = 0; pos < num.length; pos++){
+            document.write(`O elemento do indice ${pos} contém o valor ${num[pos]} <br>`)
+        }
+    </script>
+</body>
+
+</html>
